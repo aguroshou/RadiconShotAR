@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Aguro/Game.unity
+    guid: 37bcda0d3307b41629e0fb9f3b8d1bd6
   m_configObjects: {}
