@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ButtonClickScript : MonoBehaviour
 {
+    //‰æ‘œØ‚è‘Ö‚¦—p
+    public SpriteRenderer SpriteRenderer;
+    public Sprite[] Sprites;
+    public int SpriteNum = 0;
+
     public void OnClickStartButton()
     {
         SceneManager.LoadScene("Game");
@@ -16,5 +21,17 @@ public class ButtonClickScript : MonoBehaviour
     public void OnClickTitle()
     {
         SceneManager.LoadScene("Title");
+    }
+
+    public void OnClickNext()
+    {
+        SpriteNum = (SpriteNum + 1) % 3;
+        SpriteRenderer.sprite = Sprites[SpriteNum];
+    }
+
+    public void OnClickBack()
+    {
+        SpriteNum = (SpriteNum + 2) % 3;
+        SpriteRenderer.sprite = Sprites[SpriteNum];
     }
 }

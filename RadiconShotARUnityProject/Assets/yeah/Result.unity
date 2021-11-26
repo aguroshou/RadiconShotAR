@@ -345,6 +345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be4b112ef3836d643a48a4fd1e5e15a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpriteRenderer: {fileID: 0}
+  Sprites: []
+  SpriteNum: 0
 --- !u!1 &429688252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,7 +1223,6 @@ GameObject:
   - component: {fileID: 1599367194}
   - component: {fileID: 1599367196}
   - component: {fileID: 1599367195}
-  - component: {fileID: 1599367197}
   m_Layer: 5
   m_Name: HighScore(TMP)
   m_TagString: Untagged
@@ -1344,22 +1346,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599367193}
   m_CullTransparentMesh: 1
---- !u!114 &1599367197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599367193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 979f2bcc9e1f87c48a8cd82a5910a53e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScoreText: {fileID: 0}
-  HighScoreText: {fileID: 0}
-  Score: 0
-  HighScore: 0
 --- !u!1 &1799408448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,7 +1435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979f2bcc9e1f87c48a8cd82a5910a53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreText: {fileID: 0}
-  HighScoreText: {fileID: 0}
+  ScoreText: {fileID: 631775986}
+  HighScoreText: {fileID: 1599367195}
   Score: 0
   HighScore: 0

@@ -11,13 +11,12 @@ public class SaveData: MonoBehaviour
 	public int Score = 0;
 	public int HighScore = 0;
 
-	/*void Start()
-	{
-		PlayerPrefs.SetInt("Score", 1000);
-		PlayerPrefs.SetInt("HighScore", 1000);
-		ScoreText.text = "あなたのスコア：" + PlayerPrefs.GetInt("Score", 0).ToString("#");
-		HighScoreText.text = "ハイスコア：" + PlayerPrefs.GetInt("HighScore", 0).ToString("#");
-	}*/
+	void Start()
+    {
+		PlayerPrefs.SetInt("Score", Score);
+		PlayerPrefs.SetInt("HighScore", HighScore);
+		Load();
+	}
 
 	public void Save()
 	{
