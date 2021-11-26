@@ -35,7 +35,7 @@ public class BulletManager : MonoBehaviour
 
     private void OnCollisionEnter(Collision collideObject)
     {
-        if (isHit == false && this.gameObject.CompareTag("Target"))
+        if (isHit == false && collideObject.gameObject.CompareTag("Target"))
         {
             // 2回以上処理を実行させないためです。
             isHit = true;
@@ -46,6 +46,7 @@ public class BulletManager : MonoBehaviour
             Vector2 gameObjectXZ =
                 new Vector2(this.gameObject.transform.localPosition.x, this.gameObject.transform.localPosition.z);
 
+            // 弾を当てた場所がどれだけ的の中心に近いか計算します。(斜めから当てた場合は正確な位置を計算できなくなります。)
             float distance =
                 Vector2.Distance(new Vector2(0, 0), gameObjectXZ);
             int addScore = 100 - (int)(distance * 100);
