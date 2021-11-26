@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonClickScript : MonoBehaviour
 {
-    //�摜�؂�ւ��p
+    //画像切り替え用
     public SpriteRenderer SpriteRenderer;
     public Sprite[] Sprites;
     public int SpriteNum = 0;

@@ -6,36 +6,36 @@ using TMPro;
 
 public class SaveData: MonoBehaviour
 {
-	public TextMeshProUGUI ScoreText;       //ÉXÉRÉA
-	public TextMeshProUGUI HighScoreText;  //ÉnÉCÉXÉRÉA
-	public int Score = 0;
-	public int HighScore = 0;
+    public TextMeshProUGUI ScoreText;       //„Çπ„Ç≥„Ç¢
+    public TextMeshProUGUI HighScoreText;  //„Éè„Ç§„Çπ„Ç≥„Ç¢
+    public int Score = 0;
+    public int HighScore = 0;
 
-	void Start()
+    void Start()
     {
-		PlayerPrefs.SetInt("Score", Score);
-		PlayerPrefs.SetInt("HighScore", HighScore);
-		Load();
-	}
+        PlayerPrefs.SetInt("Score", Score);
+        PlayerPrefs.SetInt("HighScore", HighScore);
+        Load();
+    }
 
-	public void Save()
-	{
-		//ScoreÉLÅ[Ç…ÉnÉCÉXÉRÉAÇÉZÅ[Éu
-		PlayerPrefs.SetInt("Score", Score);
-		PlayerPrefs.Save();
+    public void Save()
+    {
+        //Score„Ç≠„Éº„Å´„Éè„Ç§„Çπ„Ç≥„Ç¢„Çí„Çª„Éº„Éñ
+        PlayerPrefs.SetInt("Score", Score);
+        PlayerPrefs.Save();
 
-		//HighScoreÉLÅ[Ç…ÉnÉCÉXÉRÉAÇÉZÅ[Éu
-		if (Score > HighScore)
-		{
-			PlayerPrefs.SetInt("HighScore", HighScore);
-			PlayerPrefs.Save();
-		}
-	}
+        //HighScore„Ç≠„Éº„Å´„Éè„Ç§„Çπ„Ç≥„Ç¢„Çí„Çª„Éº„Éñ
+        if (Score > HighScore)
+        {
+            PlayerPrefs.SetInt("HighScore", HighScore);
+            PlayerPrefs.Save();
+        }
+    }
 
-	public void Load()
-	{
-		ScoreText.text = "Ç†Ç»ÇΩÇÃÉXÉRÉAÅF" + PlayerPrefs.GetInt("Score", 0).ToString("#");	
-		HighScoreText.text = "ÉnÉCÉXÉRÉAÅF" + PlayerPrefs.GetInt("HighScore", 0).ToString("#");
-	}
+    public void Load()
+    {
+        ScoreText.text = "„ÅÇ„Å™„Åü„ÅÆ„Çπ„Ç≥„Ç¢Ôºö" + PlayerPrefs.GetInt("Score", 0).ToString("#");	
+        HighScoreText.text = "„Éè„Ç§„Çπ„Ç≥„Ç¢Ôºö" + PlayerPrefs.GetInt("HighScore", 0).ToString("#");
+    }
 
 }
