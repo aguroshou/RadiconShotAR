@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="9fantasy_ogre" size="0.100000 0.098250" />
+    <ImageTarget name="8fantasy_ocean_kraken" size="0.100000 0.090500" />
+    <ImageTarget name="7fantasy_medusa" size="0.100000 0.135135" />
+    <ImageTarget name="6fantasy_leviathan" size="0.100000 0.088000" />
+    <ImageTarget name="5fantasy_lamia" size="0.100000 0.105820" />
+    <ImageTarget name="4fantasy_kimera_chimaira" size="0.100000 0.111421" />
+    <ImageTarget name="2fantasy_frankenstein" size="0.100000 0.168776" />
+    <ImageTarget name="1fantasy_dragon_green" size="0.100000 0.092333" />
+    <ImageTarget name="0fantasy_behemoth" size="0.100000 0.086500" />
+    <ImageTarget name="3fantasy_kerberos" size="0.100000 0.090000" />
+  </Tracking>
+</QCARConfig>
